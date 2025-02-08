@@ -6,7 +6,7 @@
  * @Description: 
 -->
 <p align="center">
-<h1 align="center"> <img src="imgs/title.png" alt="SVG Image" width="40px" style="vertical-align: middle; margin-bottom: 5px;"> CoMT: A Novel Benchmark for Chain of Multi-modal Thought on Large Vision-Language Models</h1>
+<h1 align="center"> <img src="imgs/title.png" alt="SVG Image" width="50px""> CoMT: A Novel Benchmark for Chain of Multi-modal Thought on Large Vision-Language Models</h1>
 </p>
 <p align="center">
   	<a href="https://img.shields.io/badge/version-v0.0.1-blue">
