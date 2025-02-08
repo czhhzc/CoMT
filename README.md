@@ -2,7 +2,7 @@
  * @Author: Zihui Cheng
  * @Date: 2024-12-16 09:37:02
  * @LastEditors: Zihui Cheng
- * @LastEditTime: 2025-02-08 16:11:48
+ * @LastEditTime: 2025-02-08 16:20:36
  * @Description: 
 -->
 <p align="center">
@@ -42,7 +42,7 @@
 - 🔥 **The paper is also available on \[[ArXiv](https://arxiv.org/abs/2412.12932)\].**
 
 ## 💡 Motivation
-Large Vision-Language Models (LVLMs) have recently demonstrated amazing success in multi-modal tasks, including advancements in Multi-modal Chain-of-Thought (MCoT) reasoning. Despite these successes, current benchmarks still follow a traditional paradigm with multi-modal input and text-modal output, which leads to significant drawbacks such as missing visual operations and vague expressions. Motivated by this, we introduce a novel Chain of Multi-modal Thought (CoMT) benchmark to address these limitations. Different from the traditional MCoT benchmark, CoMT requires both multi-modal input and multi-modal reasoning output, aiming to mimic human-like reasoning that inherently integrates visual operation. Specifically, CoMT consists of four categories: (1) **Visual Creation**, (2) **Visual Deletion**, (3) **Visual Update**, and (4) **Visual Selection** to comprehensively explore complex visual operations and concise expression in real scenarios. We evaluate various LVLMs and strategies on CoMT, revealing some key insights into the capabilities and limitations of the current approaches. We hope that CoMT can inspire more research on introducing multi-modal generation into the reasoning process.
+Large Vision-Language Models (LVLMs) have recently demonstrated amazing success in multi-modal tasks, including advancements in Multi-modal Chain-of-Thought (MCoT) reasoning. Despite these successes, current benchmarks still follow a traditional paradigm with multi-modal input and text-modal output, which leads to significant drawbacks such as missing visual operations and vague expressions. Motivated by this, we introduce a novel **Chain of Multi-modal Thought (CoMT)** benchmark to address these limitations. Different from the traditional MCoT benchmark, CoMT requires both multi-modal input and multi-modal reasoning output, aiming to mimic human-like reasoning that inherently integrates visual operation. Specifically, CoMT consists of four categories: (1) **Visual Creation**, (2) **Visual Deletion**, (3) **Visual Update**, and (4) **Visual Selection** to comprehensively explore complex visual operations and concise expression in real scenarios. We evaluate various LVLMs and strategies on CoMT, revealing some key insights into the capabilities and limitations of the current approaches. We hope that CoMT can inspire more research on introducing multi-modal generation into the reasoning process.
 
 ## 🎯 Installation
 
@@ -62,8 +62,8 @@ The data follows the format below:
   "image": ["IMAGE"],
   "rationale": "[RATIONALE]",
   "answer": "A/B/C/D",
-  "type": "[TYPE]", // the task type, like add, delete ...
-  "annotations": "[ANNOTATIONS]" // the grounding coordinates or the tangram shape annotations
+  "type": "[TYPE]", // the task type, like add, delete, ...
+  "annotations": "[ANNOTATIONS]" // grounding coordinates or tangram annotations, etc
 }
 ```
 
