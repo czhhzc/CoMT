@@ -2,7 +2,7 @@
  * @Author: Zihui Cheng
  * @Date: 2024-12-16 09:37:02
  * @LastEditors: Zihui Cheng
- * @LastEditTime: 2025-02-09 17:05:04
+ * @LastEditTime: 2025-02-09 17:10:42
  * @Description: 
 -->
 <p align="center">
@@ -15,12 +15,12 @@
     <a >
        <img alt="PRs-Welcome" src="https://img.shields.io/badge/PRs-Welcome-blue" />
   	</a>
-   	<a href="https://github.com/czhhzc/CoMT/stargazers">
+   	<!-- <a href="https://github.com/czhhzc/CoMT/stargazers">
        <img alt="stars" src="https://img.shields.io/github/stars/czhhzc/CoMT" />
   	</a>
   	<a href="https://github.com/czhhzc/CoMT/network/members">
        <img alt="FORK" src="https://img.shields.io/github/forks/czhhzc/CoMT?color=FF8000" />
-  	</a>
+  	</a> -->
     <a href="https://github.com/czhhzc/CoMT/issues">
       <img alt="Issues" src="https://img.shields.io/github/issues/czhhzc/CoMT?color=0088ff"/>
     </a>
