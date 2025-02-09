@@ -2,7 +2,7 @@
  * @Author: Zihui Cheng
  * @Date: 2024-12-16 09:37:02
  * @LastEditors: Zihui Cheng
- * @LastEditTime: 2025-02-09 17:10:42
+ * @LastEditTime: 2025-02-09 19:31:01
  * @Description: 
 -->
 <p align="center">
@@ -48,7 +48,7 @@ Large Vision-Language Models (LVLMs) have recently demonstrated amazing success 
 The structure of CoMT is as below:
 
 ```yaml
-root
+comt
 ├── data.jsonl           # The data file of CoMT.
 ├── images          # Images of CoMT.
 │   ├── creation         # Visual Creation task.
