@@ -2,7 +2,7 @@
  * @Author: Zihui Cheng
  * @Date: 2024-12-16 09:37:02
  * @LastEditors: Zihui Cheng
- * @LastEditTime: 2025-02-09 17:02:55
+ * @LastEditTime: 2025-02-09 17:05:04
  * @Description: 
 -->
 <p align="center">
@@ -44,25 +44,30 @@
 ## 💡 Motivation
 Large Vision-Language Models (LVLMs) have recently demonstrated amazing success in multi-modal tasks, including advancements in Multi-modal Chain-of-Thought (MCoT) reasoning. Despite these successes, current benchmarks still follow a traditional paradigm with multi-modal input and text-modal output, which leads to significant drawbacks such as missing visual operations and vague expressions. Motivated by this, we introduce a novel **Chain of Multi-modal Thought (CoMT)** benchmark to address these limitations. Different from the traditional MCoT benchmark, CoMT requires both multi-modal input and multi-modal reasoning output, aiming to mimic human-like reasoning that inherently integrates visual operation. Specifically, CoMT consists of four categories: (1) **Visual Creation**, (2) **Visual Deletion**, (3) **Visual Update**, and (4) **Visual Selection** to comprehensively explore complex visual operations and concise expression in real scenarios. We evaluate various LVLMs and strategies on CoMT, revealing some key insights into the capabilities and limitations of the current approaches. We hope that CoMT can inspire more research on introducing multi-modal generation into the reasoning process.
 
-## 🎯 Installation
+## 🎯 Dataset
+The structure of CoMT is as below:
 
-### Dataset Preparation
-#### Load Dataset from Huggingface
-```python 
-import datasets
-dataset = datasets.load_dataset("czh-up/comt")
+```yaml
+root
+├── data.jsonl           # The data file of CoMT.
+├── images          # Images of CoMT.
+│   ├── creation         # Visual Creation task.
+│   ├── deletion          # Visual Deletion task.
+│   ├── update         # Visual Update task.
+│   └── selection        # Visual Selection task.
+│   ├─└── original        # Original image before stitching.
+
 ```
-
-The data follows the format below:
+Each line in `data.jsonl` follows the format below:
 ```json
 {
   "id": "[ID]",
   "question": "[QUESTION]",
   "option": ["[OPTION1]", "[OPTION2]", ...],
-  "image": ["IMAGE"],
+  "image": ["[IMAGE0:IMAGE-ID0]", "[IMAGE1:IMAGE-ID1]", ...],
   "rationale": "[RATIONALE]",
   "answer": "A/B/C/D",
-  "type": "[TYPE]", // the task type, like add, delete, ...
+  "type": "[TYPE]", // the task type, like creation, deletion, ...
   "annotations": "[ANNOTATIONS]" // grounding coordinates or tangram annotations, etc
 }
 ```
@@ -70,15 +75,16 @@ The data follows the format below:
 ## ✒️ Reference
 If you find this project useful for your research, please consider citing the following paper:
 
-```
-@article{cheng2024comt,
+``` tex
+@inproceedings{cheng2025comt,
   title={CoMT: A Novel Benchmark for Chain of Multi-modal Thought on Large Vision-Language Models},
   author={Cheng, Zihui and Chen, Qiguang and Zhang, Jin and Fei, Hao and Feng, Xiaocheng and Che, Wanxiang and Li, Min and Qin, Libo},
-  journal={arXiv preprint arXiv:2412.12932},
-  year={2024}
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={39},
+  year={2025}
 }
 ```
 
 ## 📲 Contact
 
-Please create Github issues here or email [Zihui Cheng](mailto:upupczh@gmail.com) if you have any questions or suggestions. 
+Please create Github issues here or email [Zihui Cheng](mailto:upupczh@gmail.com), [Qiguang Chen](mailto:charleschen2333@gmail.com), [Libo Qin](mailto:lbqin@csu.edu.cn) if you have any questions or suggestions.
