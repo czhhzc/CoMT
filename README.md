@@ -2,11 +2,11 @@
  * @Author: Zihui Cheng
  * @Date: 2024-12-16 09:37:02
  * @LastEditors: Zihui Cheng
- * @LastEditTime: 2025-02-08 16:20:36
+ * @LastEditTime: 2025-02-09 17:02:55
  * @Description: 
 -->
 <p align="center">
-<h1 align="center"> <img src="imgs/title.png" alt="SVG Image" width="50px""> CoMT: A Novel Benchmark for Chain of Multi-modal Thought on Large Vision-Language Models</h1>
+<h1 align="center"> <img src="imgs/title.png" alt="SVG Image" width="40px" style="vertical-align: middle;"> CoMT: A Novel Benchmark for Chain of Multi-modal Thought on Large Vision-Language Models</h1>
 </p>
 <p align="center">
   	<a href="https://img.shields.io/badge/version-v0.0.1-blue">
