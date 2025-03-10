@@ -2,7 +2,7 @@
  * @Author: Zihui Cheng
  * @Date: 2024-12-16 09:37:02
  * @LastEditors: Zihui Cheng
- * @LastEditTime: 2025-02-09 19:31:01
+ * @LastEditTime: 2025-03-10 15:38:46
  * @Description: 
 -->
 <p align="center">
@@ -69,6 +69,20 @@ Each line in `data.jsonl` follows the format below:
   "answer": "A/B/C/D",
   "type": "[TYPE]", // the task type, like creation, deletion, ...
   "annotations": "[ANNOTATIONS]" // grounding coordinates or tangram annotations, etc
+}
+```
+
+## 🚀 Evaluation
+We provide `evaluate.py` to evaluate your own results:
+```python
+python evaluate.py --data_path [COMT_PATH] \
+                   --metric_path [JSONL_PATH]
+```
+Among them, each line of file in `jsonl` must meet the following format:
+```json
+{
+  "id": "[ID]",
+  "response": "xxx ANSWER: (A)",
 }
 ```
 
